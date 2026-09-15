@@ -110,7 +110,7 @@ document.addEventListener("DOMContentLoaded", () => {
       `Bonjour DEKAL HOUSE,\n\nNom : ${name}\nEmail : ${email}\nTéléphone : ${phone}\nType de projet : ${project}\n\nMessage :\n${message}\n\nCordialement,\n${name}`
     );
 
-    window.location.href = `mailto:contact@dekal.house?subject=${subject}&body=${body}`;
+    window.location.href = `mailto: dekalhouse@gmail.com?subject=${subject}&body=${body}`;
     const status = form.querySelector(".form-status");
     status.textContent = "Votre application de messagerie va s'ouvrir avec votre demande préparée.";
   });
