@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DEKAL HOUSE | Tableau de bord</title><meta name="theme-color" content="#2563EB">
+<link rel="icon" href="logo-house-clean.png"><link rel="stylesheet" href="style.css">
+</head>
+<body class="dashboard-mode">
+<header class="dashboard-header"><a class="dashboard-brand" href="index.html"><img src="logo-house-clean.png" alt="Logo DEKAL HOUSE"><strong>DEKAL HOUSE</strong></a><a class="dashboard-back" href="index.html">← Retour au site</a></header>
+  <section id="dashboard" class="dashboard-page" aria-label="Tableau de bord des statistiques">
+    <div class="dashboard-wrap">
+      <div class="dashboard-top"><div><span class="eyebrow">DEKAL HOUSE · ANALYTICS</span><h1>Statistiques du site</h1><p>Vue d’ensemble des visites et des clics sur les projets.</p></div><a class="dashboard-back" href="/">← Retour au site</a></div>
+      <div class="dashboard-notice">Mode sans backend : ces statistiques sont enregistrées dans le navigateur qui consulte le site. Elles ne sont pas partagées entre les visiteurs, appareils ou navigateurs.</div>
+      <div class="dashboard-filters"><button data-range="week" class="active">Cette semaine</button><button data-range="month">Ce mois</button><button data-range="year">Cette année</button><button data-range="all">Tout</button></div>
+      <div class="dashboard-kpis"><article><span>Visites du site</span><strong id="dash-visits">0</strong><small id="dash-visits-change">—</small></article><article><span>Clics sur « Visiter »</span><strong id="dash-clicks">0</strong><small id="dash-clicks-change">—</small></article><article><span>Projets visités</span><strong id="dash-projects">0</strong><small>Projets avec au moins un clic</small></article><article><span>Taux de clic</span><strong id="dash-rate">0%</strong><small>Clics / visites</small></article></div>
+      <div class="dashboard-panels"><article class="dashboard-panel chart-panel"><div class="panel-heading"><div><h2>Évolution de l’activité</h2><p id="chart-caption">Visites et clics par jour</p></div></div><canvas id="activity-chart" height="260" aria-label="Graphique des visites et des clics"></canvas><div class="chart-legend"><span><i class="legend-visits"></i> Visites</span><span><i class="legend-clicks"></i> Clics</span></div></article>
+      <article class="dashboard-panel"><div class="panel-heading"><div><h2>Performance par projet</h2><p>Nombre de clics sur « Visiter »</p></div></div><div id="project-stats" class="project-stats"></div></article></div>
+      <article class="dashboard-panel dashboard-history"><div class="panel-heading"><div><h2>Comparaison annuelle</h2><p>Évolution par rapport à la même période de l’année passée</p></div></div><div id="year-comparison" class="year-comparison">Données insuffisantes pour comparer.</div></article>
+      <p class="dashboard-footnote">Les données peuvent être effacées si le stockage du navigateur est supprimé. Le tableau de bord n’est pas protégé : son adresse est simplement absente du menu, comme demandé.</p>
+    </div>
+  </section>
+<script src="dashboard.js"></script>
+</body></html>

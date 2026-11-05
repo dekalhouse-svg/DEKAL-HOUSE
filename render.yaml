@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: dekal-house
+    runtime: static
+    buildCommand: ""
+    staticPublishPath: .
+    routes:
+      - type: rewrite
+        source: /dashboard
+        destination: /index.html
